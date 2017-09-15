@@ -1,0 +1,18 @@
+This is the minimal file needed for compileand flash a project to STM32F103
+
+Steps Needed
+
+editing:
+1. Make a copy of this template
+2. goto souce directry and edit main.c file there
+3. Put your header file in that folder
+
+compiling:
+1. Open terminal
+2. Goto current directry
+3. Type 'make all' to build the project
+4. Type 'make clean' to delete the build files
+
+flashing:
+1. goto the flasher folder in the terminal and type
+	'python stm32loader.py -e -v -w -p /dev/cu.device_name_having_port ../project_name/build/main.bin'
